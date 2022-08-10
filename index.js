@@ -1,3 +1,6 @@
+// get enviroment variables
+require("dotenv").config();
+
 // require needed modules
 const express = require("express");
 
@@ -5,4 +8,4 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => res.send("Hello World!"));
-app.listen(3000, () => console.log("I am awake!"));
+app.listen(process.env.PORT, () => console.log("I am very awake!"));
