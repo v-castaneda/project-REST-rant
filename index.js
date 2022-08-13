@@ -1,17 +1,15 @@
-// get enviroment variables
+// Modules and Globals
 require("dotenv").config();
-
-// require needed modules
 const express = require("express");
-
-// initialize the app object
 const app = express();
 
-// define JSX view engine
+// Express Settings
+app.set("views", __dirname + "/views");
 app.set("view engine", "jsx");
 app.engine("jsx", require("express-react-views").createEngine());
+app.use(express.static("public"));
 
-// import router
+// Controllers & Routes
 app.use("/places", require("./controllers/places"));
 
 app.get("/", (req, res) => {
@@ -22,4 +20,5 @@ app.get("*", (req, res) => {
   res.render("error404");
 });
 
-app.listen(process.env.PORT, () => console.log("I am awake!"));
+// Listen for Connections
+app.listen(process.env.PORT);
