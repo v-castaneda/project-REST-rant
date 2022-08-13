@@ -7,11 +7,15 @@ const express = require("express");
 // initialize the app object
 const app = express();
 
+// define JSX view engine
+app.set("view engine", "jsx");
+app.engine("jsx", require("express-react-views").createEngine());
+
 // import router
 app.use("/places", require("./controllers/places"));
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.render("home");
 });
 
 app.get("*", (req, res) => {
