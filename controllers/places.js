@@ -28,7 +28,8 @@ router.get("/new", (req, res) => {
 
 // CREATE
 router.post("/", (req, res) => {
-  res.redirect("places");
+  console.log(req.body);
+  res.send("POST /places");
 });
 
 module.exports = router;
