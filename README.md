@@ -3,6 +3,7 @@
 - [Bonus for Activity 4](https://digitalskills.instructure.com/courses/6038/pages/activity-be-4-rest-rant-part-4?module_item_id=783689)
 - [Bonus for Activity 5](https://digitalskills.instructure.com/courses/6038/pages/activity-be-4-rest-rant-part-5?module_item_id=783665)
 - [Bonus for Activity 6](https://digitalskills.instructure.com/courses/6038/pages/activity-be-5-rest-rant-part-6?module_item_id=783674)
+- [Part 4 and Bonus for Activity 7](https://digitalskills.instructure.com/courses/6038/pages/activity-be-5-rest-rant-part-7?module_item_id=783680)
 
 ## Progress
 
@@ -12,7 +13,7 @@
 - ~~Part 4: Adding some style with CSS~~
 - ~~Part 5: Forms, validation, and navigation~~
 - ~~Part 6: Implementing delete functionality and adding a DELETE route~~
-- Part 7: Implementing edit form and functionality, adding a PUT route
+- ~~Part 7: Implementing edit form and functionality, adding a PUT route~~
 - Part 8: Implementing the Mongoose ODM
 - Part 9: Seed data, validations, and helper methods
 - Part 10: Adding commentary: rants and raves
